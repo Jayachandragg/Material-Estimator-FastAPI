@@ -1,12 +1,15 @@
 {% extends "app_page.html" %}
 {% block page %}
-<section class="dashboard-intro">
-  <div>
-    <p class="eyebrow">Your workspace</p>
-    <h1 id="dashboard-title">Estimation dashboard</h1>
-    <p>Create a new project or reopen a saved estimate.</p>
+<section class="dashboard-start" aria-labelledby="dashboard-title">
+  <div class="dashboard-start-text">
+    <p class="eyebrow">Start here</p>
+    <h1 id="dashboard-title">Create a new estimation</h1>
+    <p>Enter your wall dimensions, choose products for each layer and get order quantities in a few minutes.</p>
+    <a class="btn primary" href="/estimate/new">+ New estimation</a>
   </div>
-  <a class="btn primary" href="/estimate/new">＋ Create a New Estimation</a>
+  <div class="dashboard-start-art">
+    <img src="/static/product-images/landing-facade.jpg" alt="" fetchpriority="high">
+  </div>
 </section>
 <section class="dashboard-history" aria-labelledby="history-title">
   <div class="dashboard-history-head">

@@ -49,3 +49,20 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 .product-list a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #edf0f2; color: #17222d; text-decoration: none; }
 .product-list a:hover strong { color: #b9432b; }
 .muted-small { color: #687581; font-size: 13px; }
+
+/* Dashboard: "Create a new estimation" card (text left, photo right). */
+.dashboard-start { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); margin-bottom: 30px;
+  background: #fff; border: 1px solid #e1e5e8; border-radius: 18px; overflow: hidden; min-height: 400px; }
+.dashboard-start-text { padding: 48px 46px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.dashboard-start .eyebrow { color: #b9432b; font-size: 12px; letter-spacing: .16em; margin: 0 0 12px; }
+.dashboard-start h1 { font: 700 clamp(30px, 3.6vw, 46px)/1.08 'Helvetica Neue', Arial, sans-serif; letter-spacing: -.035em; color: #17222d; margin: 0 0 18px; }
+.dashboard-start-text > p:not(.eyebrow) { color: #53616d; font-size: 17px; line-height: 1.65; margin: 0 0 30px; max-width: 34em; }
+.dashboard-start .btn.primary { background: #c8492c; border-radius: 10px; padding: 14px 32px; font-size: 16px; box-shadow: 0 2px 8px rgba(200, 73, 44, .26); }
+.dashboard-start .btn.primary:hover { background: #a83c23; }
+.dashboard-start-art { position: relative; background: #d5c7b9; min-height: 260px; }
+.dashboard-start-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) {
+  .dashboard-start { grid-template-columns: 1fr; min-height: 0; }
+  .dashboard-start-text { padding: 28px 22px; }
+  .dashboard-start-art { min-height: 200px; order: -1; }
+}
