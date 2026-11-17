@@ -1,0 +1,22 @@
+{% extends "app_page.html" %}
+{% block page %}
+<section class="dashboard-intro">
+  <div><p class="eyebrow">Account</p><h1>Your profile</h1><p>{{ user.email }}</p></div>
+</section>
+<form method="post" action="/account" class="admin-panel">
+  <h2>Details</h2>
+  <table class="admin-table"><tbody>
+    <tr><th scope="row"><label for="full_name">Full name</label></th><td><input id="full_name" name="full_name" value="{{ profile.full_name if profile else '' }}"></td></tr>
+    <tr><th scope="row"><label for="company">Company</label></th><td><input id="company" name="company" value="{{ profile.company if profile else '' }}"></td></tr>
+  </tbody></table>
+  <div class="admin-actions">
+    <button class="btn primary" type="submit">Save</button>
+    {% if saved %}<span class="badge" role="status">Saved.</span>{% endif %}
+  </div>
+</form>
+<section class="admin-panel">
+  <h2>Password</h2>
+  <p class="muted-small">We will email you a link to choose a new password.</p>
+  <div class="admin-actions"><a class="btn" href="/forgot-password">Change password</a></div>
+</section>
+{% endblock %}

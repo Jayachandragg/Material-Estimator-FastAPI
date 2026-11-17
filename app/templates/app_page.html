@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block body %}
+<main id="estimator-dashboard">
+  <header class="dashboard-top">
+    <a class="dashboard-brand" href="/dashboard">Material Estimator · Outsulation Plus MD</a>
+    <nav class="app-links" aria-label="Account">
+      <span class="app-user">{{ (profile.full_name if profile and profile.full_name) or (user.email if user) }}</span>
+      <a class="btn ghost" href="/dashboard">Dashboard</a>
+      {% if profile and profile.role == 'admin' %}
+      <a class="btn ghost" href="/admin/products">Products</a>
+      <a class="btn ghost" href="/admin/users">Users</a>
+      {% endif %}
+      <a class="btn ghost" href="/account">Account</a>
+      <form method="post" action="/logout"><button class="btn" type="submit">Sign out</button></form>
+    </nav>
+  </header>
+  {% block page %}{% endblock %}
+</main>
+{% endblock %}

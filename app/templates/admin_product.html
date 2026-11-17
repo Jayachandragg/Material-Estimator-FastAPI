@@ -1,0 +1,48 @@
+{% extends "app_page.html" %}
+{% block page %}
+<section class="dashboard-intro">
+  <div>
+    <p class="eyebrow"><a href="/admin/products">← Products</a></p>
+    <h1>{{ product.name }}</h1>
+    <p>Product id <code>{{ product.id }}</code> · unit “{{ product.unit }}” ·
+      {% if changed %}<span class="badge changed">Changed from verified values</span>{% else %}<span class="badge">Verified values</span>{% endif %}</p>
+  </div>
+</section>
+<form method="post" action="/admin/products/{{ product.id }}" class="admin-panel">
+  <h2>Details</h2>
+  <table class="admin-table"><tbody>
+    <tr><th scope="row">Name</th><td><input name="name" value="{{ product.name }}" required></td></tr>
+    <tr><th scope="row">Unit description</th><td><input name="unit_desc" value="{{ product.ud }}"></td></tr>
+  </tbody></table>
+  <h2 style="margin-top:22px">Coverage rates</h2>
+  <p class="muted-small">Leave a cell empty if it does not apply. These are the same fields the calculator reads.</p>
+  <div class="admin-scroll">
+    <table class="admin-table">
+      <thead><tr><th>#</th>{% for k, label, kind in cols %}<th>{{ label }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        {% for r in product.rates %}{% set i = loop.index0 %}
+        <tr><td>{{ loop.index }}</td>
+          {% for k, label, kind in cols %}
+          <td><input name="r{{ i }}_{{ k }}" aria-label="Rate {{ loop.index }} {{ label }}" type="{{ kind }}" step="any" {% if kind == 'number' %}min="0"{% endif %} value="{{ r[k] if r[k] is defined and r[k] is not none else '' }}"></td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="admin-actions">
+    <button class="btn primary" type="submit">Save product</button>
+    {% if saved %}<span class="badge" role="status">Saved.</span>{% endif %}
+    {% if form_error %}<span class="notice err" role="status">{{ form_error }}</span>{% endif %}
+  </div>
+</form>
+{% if changed %}
+<section class="admin-panel">
+  <h2>Reset</h2>
+  <p class="muted-small">Restore the name, unit description and rates exactly as in calculator_v8.</p>
+  <form method="post" action="/admin/products/{{ product.id }}/reset" class="admin-actions">
+    <button class="btn" type="submit">Reset to verified values</button>
+  </form>
+</section>
+{% endif %}
+{% endblock %}

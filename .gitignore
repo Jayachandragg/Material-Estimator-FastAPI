@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.env.local
+.vercel/
+tools/node_modules/
+# generated test data (large; regenerate with tools/make_cases.mjs)
+tests/cases.jsonl

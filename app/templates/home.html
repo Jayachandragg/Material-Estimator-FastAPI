@@ -1,0 +1,29 @@
+{% extends "welcome.html" %}
+{% block content %}
+<p class="eyebrow">Outsulation Plus MD</p>
+<h1 id="welcome-title">Material Estimator</h1>
+<p>Estimate materials for an Outsulation Plus MD exterior wall system. Enter your project dimensions, choose products for each layer, and review the quantities before ordering.</p>
+<div class="welcome-actions">
+  {% if user %}
+  <a class="btn primary" href="/dashboard">Go to dashboard</a>
+  {% else %}
+  <a class="btn primary" href="/login">Sign in</a>
+  <a class="btn" href="/signup">Create an account</a>
+  <a class="btn ghost" href="/guest">Continue as guest</a>
+  {% endif %}
+</div>
+{% endblock %}
+{% block footer %}
+<section class="landing-overview" aria-labelledby="landing-overview-title">
+  <img src="/static/product-images/landing-guest.jpg" alt="Samples of plaster, insulation and reinforcing mesh" loading="lazy">
+  <div>
+    <p class="eyebrow">How it works</p>
+    <h2 id="landing-overview-title">From wall dimensions to a material list</h2>
+    <ol>
+      <li><strong>Describe your project.</strong> Enter the wall area, joint length and openings.</li>
+      <li><strong>Build your wall system.</strong> Choose products layer by layer.</li>
+      <li><strong>Review the estimate.</strong> Check quantities, save, print or download a material list.</li>
+    </ol>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "welcome.html" %}
+{% block content %}
+<p class="eyebrow">Account</p>
+<h1>Reset your password</h1>
+{% if sent %}
+<p class="notice ok">If an account exists for that email, a reset link is on its way. Open it in this same browser.</p>
+{% else %}
+<form class="auth-form" method="post" action="/forgot-password">
+  <label class="fld" for="email">Email</label>
+  <input id="email" name="email" type="email" required autocomplete="email">
+  {% if form_error %}<p class="field-error" role="alert">{{ form_error }}</p>{% endif %}
+  <div class="welcome-actions"><button class="btn primary" type="submit">Send reset link</button></div>
+</form>
+{% endif %}
+<p class="auth-foot"><a href="/login">Back to sign in</a></p>
+{% endblock %}

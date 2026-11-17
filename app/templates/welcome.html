@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<main id="estimator-welcome">
+  <header class="landing-header">
+    <a class="landing-brand" href="/">Material Estimator</a>
+    <span>Outsulation Plus MD</span>
+  </header>
+  <div class="welcome-layout">
+    <picture class="welcome-art"><img src="{% block image %}/static/product-images/landing-facade.jpg{% endblock %}" alt="" fetchpriority="high"></picture>
+    <div class="welcome-content">
+      {% if not configured %}<p class="notice err">Sign-in is not configured yet: set SUPABASE_URL and SUPABASE_PUBLISHABLE_KEY.</p>{% endif %}
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+  {% block footer %}{% endblock %}
+</main>
+{% endblock %}

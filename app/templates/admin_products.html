@@ -1,0 +1,22 @@
+{% extends "app_page.html" %}
+{% block page %}
+{% set changed = products | selectattr('changed') | list | length %}
+<section class="dashboard-intro">
+  <div>
+    <p class="eyebrow">Admin</p>
+    <h1>Products</h1>
+    <p>{{ products | length }} products · {% if changed %}{{ changed }} changed from the verified calculator values{% else %}all match the verified calculator values{% endif %}</p>
+  </div>
+</section>
+<section class="admin-panel">
+  <p class="notice ok" style="margin-top:0">The catalogue starts with the verified values from calculator_v8. Changes here affect every new calculation. Use “Reset to verified values” on a product to undo.</p>
+  <div class="product-list">
+    {% for p in products %}
+    <a href="/admin/products/{{ p.id }}">
+      <span><strong>{{ p.name }}</strong><span class="muted-small"> · {{ p.ud }} · {{ p.rates | length }} rate{{ '' if p.rates | length == 1 else 's' }}</span></span>
+      {% if p.changed %}<span class="badge changed">Changed</span>{% else %}<span class="badge">Verified</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

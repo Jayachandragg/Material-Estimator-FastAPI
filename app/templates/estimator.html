@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block body %}
+<div id="toast" class="notice" role="status" hidden style="position:fixed; bottom:16px; right:16px; z-index:50; max-width:380px"></div>
+<div id="root"></div>
+<script>window.ESTIMATOR = {{ config | tojson }};</script>
+<script src="/static/estimator-ui.js"></script>
+<script src="/static/estimator-page.js"></script>
+{% endblock %}

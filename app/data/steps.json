@@ -1,0 +1,218 @@
+[
+  {
+    "id": "s0",
+    "num": 1,
+    "name": "Accessories",
+    "desc": "Dryvit Grid Tape for sheathing joints",
+    "req": true,
+    "directQty": true,
+    "pids": [
+      "gridtape"
+    ]
+  },
+  {
+    "id": "s1",
+    "num": 2,
+    "name": "Air/Water-Resistive Barrier",
+    "desc": "Applied over sheathing before EIFS layers",
+    "req": true,
+    "jointsFromGlobal": true,
+    "pids": [
+      "bsntvb",
+      "bsntx"
+    ],
+    "filter": "noJoints"
+  },
+  {
+    "id": "s2",
+    "num": 3,
+    "name": "Flashing System",
+    "desc": "Waterproof flashing at openings, sills, and penetrations",
+    "req": true,
+    "aqSystem": true,
+    "pids": [
+      "aqsystem",
+      "aqflash",
+      "aqflashmesh",
+      "bff"
+    ]
+  },
+  {
+    "id": "s3",
+    "num": 4,
+    "name": "Drainage",
+    "desc": "Evacuates incidental moisture behind the insulation board",
+    "req": true,
+    "dualToggle": [
+      {
+        "pid": "draintrack",
+        "label": "Drainage Track"
+      },
+      {
+        "pid": "drainstrip",
+        "label": "Drainage Strip"
+      }
+    ]
+  },
+  {
+    "id": "s4",
+    "num": 5,
+    "name": "Adhesive",
+    "desc": "Bonds the insulation board to the substrate",
+    "req": true,
+    "pids": [
+      "genesis",
+      "primus",
+      "genesis_dm",
+      "genesis_dms",
+      "primus_dm",
+      "r3550",
+      "r5075",
+      "dryflex",
+      "instastick"
+    ],
+    "filter": "adhesiveOnly"
+  },
+  {
+    "id": "s5",
+    "num": 6,
+    "name": "EPS Insulation Board",
+    "desc": "Creates a layer of continuous insulation",
+    "req": true,
+    "epsThickness": true,
+    "pids": [
+      "epsboard"
+    ]
+  },
+  {
+    "id": "s6",
+    "num": 7,
+    "name": "Base Coat",
+    "desc": "Reinforced coat that embeds the mesh over the insulation",
+    "req": true,
+    "pids": [
+      "genesis",
+      "primus",
+      "genesis_dm",
+      "genesis_dms",
+      "primus_dm",
+      "r5075",
+      "dryflex",
+      "ncb",
+      "shieldit",
+      "skmit"
+    ],
+    "filter": "baseCoatOnly"
+  },
+  {
+    "id": "s7",
+    "num": 8,
+    "name": "Reinforcing Mesh",
+    "desc": "Embedded in the wet base coat for impact resistance",
+    "req": true,
+    "groups": [
+      {
+        "label": "Standard",
+        "pids": [
+          "spm",
+          "smesh"
+        ]
+      },
+      {
+        "label": "Heavy-Duty / Impact",
+        "pids": [
+          "p15",
+          "p20",
+          "dmsr"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "s8",
+    "num": 9,
+    "name": "Dryvit Finish",
+    "desc": "The decorative textured, stone, or coated exterior surface",
+    "req": true,
+    "groups": [
+      {
+        "label": "Textured Finishes",
+        "pids": [
+          "dpr",
+          "mojave",
+          "pmr",
+          "hdpfin",
+          "efin",
+          "lymestone",
+          "ferros",
+          "finesse",
+          "wtexfin",
+          "woodgrain"
+        ]
+      },
+      {
+        "label": "Stone Finishes",
+        "pids": [
+          "stonemist",
+          "terraneo",
+          "tiburstone"
+        ]
+      },
+      {
+        "label": "Specialty Finishes",
+        "pids": [
+          "ameristone",
+          "reflectit"
+        ]
+      },
+      {
+        "label": "Masonry Finishes",
+        "pids": [
+          "custombrick",
+          "newbrick"
+        ]
+      },
+      {
+        "label": "Stains",
+        "pids": [
+          "tglaze"
+        ]
+      },
+      {
+        "label": "Wall Coatings",
+        "pids": [
+          "demadv",
+          "demsm",
+          "demsd",
+          "hdpcoat",
+          "wlsmooth"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a1",
+    "num": "+",
+    "name": "Primer",
+    "desc": "Applied over dried base coat before certain finishes",
+    "req": false,
+    "def": false,
+    "pids": [
+      "cp",
+      "cpw",
+      "pws",
+      "prymit"
+    ]
+  },
+  {
+    "id": "a2",
+    "num": "+",
+    "name": "Sealer / Protective Topcoat",
+    "desc": "Clear sealer applied over the finish for extra protection",
+    "req": false,
+    "def": false,
+    "pids": [
+      "sealclear"
+    ]
+  }
+]

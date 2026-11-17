@@ -1,0 +1,31 @@
+{% extends "app_page.html" %}
+{% block page %}
+<section class="dashboard-intro">
+  <div><p class="eyebrow">Admin</p><h1>Users</h1><p>{{ users | length }} accounts</p></div>
+</section>
+<section class="admin-panel admin-scroll">
+  <table class="admin-table">
+    <thead><tr><th>Name</th><th>Email</th><th>Company</th><th>Estimates</th><th>Joined</th><th>Role</th></tr></thead>
+    <tbody>
+      {% for u in users %}
+      <tr>
+        <td>{{ u.full_name or '—' }}</td><td>{{ u.email }}</td><td>{{ u.company or '—' }}</td>
+        <td>{{ counts.get(u.id, 0) }}</td><td>{{ (u.created_at or '')[:10] }}</td>
+        <td>
+          {% if u.id == me %}<span class="badge">{{ u.role }} (you)</span>
+          {% else %}
+          <form method="post" action="/admin/users/{{ u.id }}/role" style="display:flex; gap:8px">
+            <select name="role" aria-label="Role for {{ u.email }}">
+              <option value="user" {% if u.role == 'user' %}selected{% endif %}>user</option>
+              <option value="admin" {% if u.role == 'admin' %}selected{% endif %}>admin</option>
+            </select>
+            <button class="btn" type="submit">Update</button>
+          </form>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

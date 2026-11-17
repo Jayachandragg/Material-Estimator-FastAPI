@@ -1,0 +1,37 @@
+{% extends "app_page.html" %}
+{% block page %}
+<section class="dashboard-intro">
+  <div>
+    <p class="eyebrow">Your workspace</p>
+    <h1 id="dashboard-title">Estimation dashboard</h1>
+    <p>Create a new project or reopen a saved estimate.</p>
+  </div>
+  <a class="btn primary" href="/estimate/new">＋ Create a New Estimation</a>
+</section>
+<section class="dashboard-history" aria-labelledby="history-title">
+  <div class="dashboard-history-head">
+    <h2 id="history-title">Saved estimations</h2>
+    <span class="muted">{{ items | length }} saved</span>
+  </div>
+  <div class="history-list">
+    {% if not items %}
+    <div class="history-empty">No saved estimations yet. Create an estimate and choose Save estimate on its Review page.</div>
+    {% endif %}
+    {% for item in items %}
+    {% set project = (item.snapshot or {}).get('project') or {} %}
+    <div class="history-row">
+      <a class="history-entry" href="/estimate/{{ item.id }}">
+        <span>
+          <strong>{{ item.name or 'Untitled project' }}</strong>
+          <span>{{ project.estimator or 'Estimator not entered' }} · {{ project.date or item.updated_at[:10] }} · {{ item.area | num }} sq. ft · {{ item.product_count }} products</span>
+        </span>
+        <span class="history-arrow" aria-hidden="true">›</span>
+      </a>
+      <form method="post" action="/estimates/{{ item.id }}/delete" onsubmit="return confirm('Delete this estimate? This cannot be undone.')">
+        <button class="link-danger" type="submit" aria-label="Delete {{ item.name }}">Delete</button>
+      </form>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

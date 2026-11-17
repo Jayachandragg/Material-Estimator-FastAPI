@@ -1,0 +1,29 @@
+{% extends "welcome.html" %}
+{% block image %}/static/product-images/landing-guest.jpg{% endblock %}
+{% block content %}
+{% set from_guest = 'resume=guest' in next %}
+<p class="eyebrow">Get started</p>
+<h1>Create an account</h1>
+{% if sent_to %}
+<p class="notice ok">We sent a confirmation link to <strong>{{ sent_to }}</strong>. Open it in this same browser to activate your account{% if from_guest %} — your estimate will come back{% endif %}.</p>
+{% else %}
+{% if from_guest %}<p class="notice ok">Your estimate is kept in this browser. Create an account (or sign in) and it will open again, ready to save.</p>{% endif %}
+{% include "_google.html" %}
+<form class="auth-form" method="post" action="/signup">
+  <input type="hidden" name="next" value="{{ next }}">
+  <label class="fld" for="full_name">Full name</label>
+  <input id="full_name" name="full_name" required autocomplete="name" value="{{ form.full_name if form else '' }}">
+  <label class="fld" for="company">Company</label>
+  <input id="company" name="company" autocomplete="organization" value="{{ form.company if form else '' }}">
+  <label class="fld" for="email">Email</label>
+  <input id="email" name="email" type="email" required autocomplete="email" value="{{ form.email if form else '' }}">
+  <label class="fld" for="password">Password</label>
+  <input id="password" name="password" type="password" required minlength="8" autocomplete="new-password">
+  <label class="fld" for="confirm">Confirm password</label>
+  <input id="confirm" name="confirm" type="password" required minlength="8" autocomplete="new-password">
+  {% if form_error %}<p class="field-error" role="alert">{{ form_error }}</p>{% endif %}
+  <div class="welcome-actions"><button class="btn primary" type="submit">Create account</button></div>
+</form>
+{% endif %}
+<p class="auth-foot">Already have an account? <a href="/login{% if next != '/dashboard' %}?next={{ next | urlencode }}{% endif %}">Sign in</a></p>
+{% endblock %}

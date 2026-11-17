@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "genesis",
+    "name": "Genesis®",
+    "unit": "pail",
+    "ud": "60 lb (27 kg) pail",
+    "rates": [
+      {
+        "l": "Adhesive + Base Coat — combined",
+        "a": 140,
+        "b": 140
+      },
+      {
+        "l": "Adhesive only",
+        "a": 260,
+        "b": 260
+      },
+      {
+        "l": "Base coat only",
+        "a": 120,
+        "b": 120
+      }
+    ]
+  },
+  {
+    "id": "primus",
+    "name": "Primus®",
+    "unit": "pail",
+    "ud": "60 lb (27 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 110,
+        "b": 110,
+        "n": "Covers adhesive and base coat in one product"
+      }
+    ]
+  },
+  {
+    "id": "genesis_dm",
+    "name": "Genesis DM",
+    "unit": "bag",
+    "ud": "50 lb (22.7 kg) bag",
+    "rates": [
+      {
+        "l": "Adhesive + Base Coat — combined",
+        "a": 55,
+        "b": 55
+      },
+      {
+        "l": "Adhesive only",
+        "a": 100,
+        "b": 100
+      },
+      {
+        "l": "Base coat only",
+        "a": 120,
+        "b": 120
+      }
+    ]
+  },
+  {
+    "id": "genesis_dms",
+    "name": "Genesis DMS",
+    "unit": "bag",
+    "ud": "50 lb (22.7 kg) bag",
+    "rates": [
+      {
+        "l": "Adhesive + Base Coat — combined",
+        "a": 55,
+        "b": 60
+      },
+      {
+        "l": "Adhesive only",
+        "a": 100,
+        "b": 110
+      },
+      {
+        "l": "Base coat only",
+        "a": 120,
+        "b": 130
+      }
+    ]
+  },
+  {
+    "id": "primus_dm",
+    "name": "Primus DM",
+    "unit": "bag",
+    "ud": "50 lb (22.7 kg) bag",
+    "rates": [
+      {
+        "l": "Adhesive + Base Coat — combined",
+        "a": 55,
+        "b": 55
+      },
+      {
+        "l": "Adhesive only",
+        "a": 100,
+        "b": 100
+      },
+      {
+        "l": "Base coat only",
+        "a": 120,
+        "b": 120
+      }
+    ]
+  },
+  {
+    "id": "r3550",
+    "name": "Rapidry DM 35–50",
+    "unit": "bag",
+    "ud": "50 lb (22.7 kg) bag",
+    "rates": [
+      {
+        "l": "Adhesive + Base Coat — combined",
+        "a": 55,
+        "b": 55
+      },
+      {
+        "l": "Adhesive only",
+        "a": 100,
+        "b": 100
+      },
+      {
+        "l": "Base coat only",
+        "a": 120,
+        "b": 120
+      }
+    ]
+  },
+  {
+    "id": "r5075",
+    "name": "Rapidry DM 50–75",
+    "unit": "bag",
+    "ud": "45 lb (20.4 kg) bag",
+    "rates": [
+      {
+        "l": "Adhesive + Base Coat — combined",
+        "a": 55,
+        "b": 55
+      },
+      {
+        "l": "Adhesive only",
+        "a": 100,
+        "b": 100
+      },
+      {
+        "l": "Base coat only",
+        "a": 120,
+        "b": 120
+      }
+    ]
+  },
+  {
+    "id": "instastick",
+    "name": "Instastick",
+    "unit": "canister",
+    "ud": "canister",
+    "rates": [
+      {
+        "l": null,
+        "a": 800,
+        "b": 800,
+        "n": "Not a Dryvit product — third-party adhesive."
+      }
+    ]
+  },
+  {
+    "id": "ncb",
+    "name": "NCB",
+    "unit": "pail",
+    "ud": "65 lb (29.5 kg) pail",
+    "rates": [
+      {
+        "l": "Base coat",
+        "a": 110,
+        "b": 130
+      },
+      {
+        "l": "Grout coat",
+        "a": 200,
+        "b": 250
+      }
+    ]
+  },
+  {
+    "id": "dryflex",
+    "name": "Dryflex",
+    "unit": "pail",
+    "ud": "45 lb (20 kg) pail",
+    "rates": [
+      {
+        "l": "Water-resistant adhesive",
+        "a": 80,
+        "b": 90
+      },
+      {
+        "l": "Water-resistant base coat",
+        "a": 120,
+        "b": 135
+      },
+      {
+        "l": "Hydrostatic coating (1/8 in)",
+        "a": 80,
+        "b": 90
+      }
+    ]
+  },
+  {
+    "id": "shieldit",
+    "name": "ShieldIt",
+    "unit": "pail",
+    "ud": "60 lb (27.2 kg) pail",
+    "rates": [
+      {
+        "l": "1st Coat (Dark Grey)",
+        "a": 120,
+        "b": 130,
+        "n": "Requires Portland Cement — purchased separately"
+      },
+      {
+        "l": "2nd Coat (Light Grey)",
+        "a": 130,
+        "b": 140,
+        "n": "Requires Portland Cement — purchased separately"
+      }
+    ]
+  },
+  {
+    "id": "skmit",
+    "name": "SkimIt",
+    "unit": "pail",
+    "ud": "60 lb (27 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 350,
+        "b": 350,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "bsntvb",
+    "name": "Backstop NT-VB",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": "Face — Trowel or Texture Sprayer",
+        "g": "Gypsum Sheathing",
+        "a": null,
+        "b": 200,
+        "coats": 2,
+        "n": "200 ft² max per pail (2 coats). Tape joints with Dryvit Grid Tape before applying."
+      },
+      {
+        "l": "Face — Airless Spray",
+        "g": "Gypsum Sheathing",
+        "a": 300,
+        "b": 375,
+        "coats": 2
+      },
+      {
+        "l": "Joints — Trowel",
+        "g": "Gypsum Sheathing",
+        "lf": 300,
+        "n": "Tape joints with Dryvit Grid Tape before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Face — Trowel or Texture Sprayer",
+        "g": "Fiberglass Gypsum",
+        "a": null,
+        "b": 200,
+        "coats": 2,
+        "n": "200 ft² max per pail (2 coats). Includes joints."
+      },
+      {
+        "l": "Face — Airless Spray",
+        "g": "Fiberglass Gypsum",
+        "a": 300,
+        "b": 375,
+        "coats": 2
+      },
+      {
+        "l": "Joints — Trowel",
+        "g": "Fiberglass Gypsum",
+        "lf": 300,
+        "n": "Tape joints with Dryvit Grid Tape before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Face — Trowel or Texture Sprayer",
+        "g": "Plywood / Cement Board",
+        "a": null,
+        "b": 200,
+        "coats": 2,
+        "n": "200 ft² max per pail (2 coats)."
+      },
+      {
+        "l": "Face — Airless Spray",
+        "g": "Plywood / Cement Board",
+        "a": 300,
+        "b": 375,
+        "coats": 2
+      },
+      {
+        "l": "Joints — Trowel",
+        "g": "Plywood / Cement Board",
+        "lf": 300,
+        "n": "Tape joints with Dryvit Grid Tape before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Face — Trowel (backrolled)",
+        "g": "OSB",
+        "a": null,
+        "b": 200,
+        "coats": 2
+      },
+      {
+        "l": "Face — Texture Sprayer (backrolled)",
+        "g": "OSB",
+        "a": null,
+        "b": 200,
+        "coats": 2
+      },
+      {
+        "l": "Face — Airless Spray (backrolled)",
+        "g": "OSB",
+        "a": 300,
+        "b": 375,
+        "coats": 2
+      },
+      {
+        "l": "Joints — Trowel",
+        "g": "OSB",
+        "lf": 300,
+        "n": "Tape joints with Dryvit Grid Tape before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Face — Trowel",
+        "g": "Concrete / Masonry",
+        "a": 100,
+        "b": 125,
+        "coats": 2,
+        "n": "Test a 6×6 ft area first — coverage varies with porosity."
+      },
+      {
+        "l": "Face — Texture Sprayer",
+        "g": "Concrete / Masonry",
+        "a": 100,
+        "b": 125,
+        "coats": 2,
+        "n": "Test a 6×6 ft area first — coverage varies with porosity."
+      },
+      {
+        "l": "Face — Airless Spray",
+        "g": "Concrete / Masonry",
+        "a": 150,
+        "b": 375,
+        "coats": 2,
+        "n": "Coverage range depends on masonry porosity. Test area first."
+      }
+    ]
+  },
+  {
+    "id": "bsntx",
+    "name": "Backstop NTX",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": "Face — Texture (Trowel / Roller / Spray)",
+        "g": "Gypsum Sheathing",
+        "a": 250,
+        "b": 300
+      },
+      {
+        "l": "Face — Smooth, Roller",
+        "g": "Gypsum Sheathing",
+        "a": 800,
+        "b": 800
+      },
+      {
+        "l": "Face — Smooth, Airless Spray",
+        "g": "Gypsum Sheathing",
+        "a": 500,
+        "b": 600
+      },
+      {
+        "l": "Joints — Texture, Trowel",
+        "g": "Gypsum Sheathing",
+        "lf": 300,
+        "n": "Tape joints with Dryvit Grid Tape before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Joints — Smooth, Trowel",
+        "g": "Gypsum Sheathing",
+        "a": 800,
+        "b": 800
+      },
+      {
+        "l": "Face — Texture, Trowel (incl. joints)",
+        "g": "Fiberglass Gypsum",
+        "a": 250,
+        "b": 300
+      },
+      {
+        "l": "Face — Smooth, Roller",
+        "g": "Fiberglass Gypsum",
+        "a": 450,
+        "b": 500
+      },
+      {
+        "l": "Face — Smooth, Airless Spray",
+        "g": "Fiberglass Gypsum",
+        "a": 500,
+        "b": 600
+      },
+      {
+        "l": "Joints — Texture, Trowel",
+        "g": "Fiberglass Gypsum",
+        "lf": 300,
+        "n": "Tape joints with AquaFlash Mesh before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Joints — Smooth, Trowel",
+        "g": "Fiberglass Gypsum",
+        "a": 650,
+        "b": 650
+      },
+      {
+        "l": "Face — Texture (Trowel / Roller / Spray)",
+        "g": "Plywood / Cement Board",
+        "a": 250,
+        "b": 300
+      },
+      {
+        "l": "Face — Smooth, Roller",
+        "g": "Plywood / Cement Board",
+        "a": 500,
+        "b": 600
+      },
+      {
+        "l": "Face — Smooth, Airless Spray",
+        "g": "Plywood / Cement Board",
+        "a": 500,
+        "b": 600
+      },
+      {
+        "l": "Joints — Texture, Trowel",
+        "g": "Plywood / Cement Board",
+        "lf": 300,
+        "n": "Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Joints — Smooth, Trowel",
+        "g": "Plywood / Cement Board",
+        "a": 650,
+        "b": 650
+      },
+      {
+        "l": "Face — Smooth, Roller",
+        "g": "OSB",
+        "a": 350,
+        "b": 400
+      },
+      {
+        "l": "Face — Smooth, Airless Spray",
+        "g": "OSB",
+        "a": 350,
+        "b": 400
+      },
+      {
+        "l": "Joints — Texture, Trowel",
+        "g": "OSB",
+        "lf": 300,
+        "n": "Tape joints with Dryvit Grid Tape before applying. Coverage: 300 lin. ft per pail."
+      },
+      {
+        "l": "Joints — Smooth, Trowel",
+        "g": "OSB",
+        "a": 650,
+        "b": 650
+      },
+      {
+        "l": "Face — Texture, Trowel",
+        "g": "Concrete / Masonry",
+        "a": 200,
+        "b": 250
+      },
+      {
+        "l": "Face — Smooth, Roller or Texture Sprayer",
+        "g": "Concrete / Masonry",
+        "a": 200,
+        "b": 250
+      },
+      {
+        "l": "Face — Smooth, Airless Spray",
+        "g": "Concrete / Masonry",
+        "a": 300,
+        "b": 500
+      }
+    ]
+  },
+  {
+    "id": "bff",
+    "name": "Backstop Flash & Fill",
+    "unit": "sausage",
+    "ud": "20 oz (0.59 L) cartridge",
+    "rates": [
+      {
+        "l": null,
+        "a": 15,
+        "b": 17,
+        "n": "Applied at 12–15 wet mils"
+      }
+    ]
+  },
+  {
+    "id": "aqsystem",
+    "name": "AquaFlash System (Mesh + Liquid)",
+    "unit": "system",
+    "ud": "mesh + liquid",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null
+      }
+    ]
+  },
+  {
+    "id": "aqflash",
+    "name": "AquaFlash Liquid",
+    "unit": "container",
+    "ud": "container (8 lb or 40 lb)",
+    "rates": [
+      {
+        "g": "Small container (8 lb / 3.6 kg)",
+        "l": "4 in wide mesh",
+        "lf": 304
+      },
+      {
+        "g": "Small container (8 lb / 3.6 kg)",
+        "l": "6 in wide mesh",
+        "lf": 200
+      },
+      {
+        "g": "Small container (8 lb / 3.6 kg)",
+        "l": "9 in wide mesh",
+        "lf": 136
+      },
+      {
+        "g": "Large container (40 lb / 18.2 kg)",
+        "l": "4 in wide mesh",
+        "lf": 1520
+      },
+      {
+        "g": "Large container (40 lb / 18.2 kg)",
+        "l": "6 in wide mesh",
+        "lf": 1000
+      },
+      {
+        "g": "Large container (40 lb / 18.2 kg)",
+        "l": "9 in wide mesh",
+        "lf": 680
+      }
+    ]
+  },
+  {
+    "id": "aqflashmesh",
+    "name": "AquaFlash Mesh",
+    "unit": "roll",
+    "ud": "roll — 180 lin. ft",
+    "rates": [
+      {
+        "l": "4 in wide",
+        "lf": 180
+      },
+      {
+        "l": "6 in wide",
+        "lf": 180
+      },
+      {
+        "l": "9 in wide",
+        "lf": 180
+      }
+    ]
+  },
+  {
+    "id": "draintrack",
+    "name": "Dryvit Drainage Track",
+    "unit": "piece",
+    "ud": "piece — 10 lin. ft",
+    "rates": [
+      {
+        "l": null,
+        "lf": 10,
+        "n": "Starter Trac STWP, Starter Trac STDE, Universal Starter Track, or Sloped Starter Strip with Drip, per DS451."
+      }
+    ]
+  },
+  {
+    "id": "drainstrip",
+    "name": "Dryvit Drainage Strip",
+    "unit": "roll",
+    "ud": "roll — 250 lin. ft",
+    "rates": [
+      {
+        "l": null,
+        "lf": 250,
+        "n": "Packaged 6 rolls per case (1,500 lin. ft per case), per DS451."
+      }
+    ]
+  },
+  {
+    "id": "epsboard",
+    "name": "EPS Insulation Board",
+    "unit": "bundle",
+    "ud": "bundle",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "No technical data sheet on file for this product — coverage depends on board thickness/density. Consult your project specs."
+      }
+    ]
+  },
+  {
+    "id": "spm",
+    "name": "Standard Plus Mesh",
+    "unit": "roll",
+    "ud": "roll — 48 in × 150 ft",
+    "rates": [
+      {
+        "l": null,
+        "a": 600,
+        "b": 600,
+        "n": "Edges lapped 2½ in — order 10% extra"
+      }
+    ]
+  },
+  {
+    "id": "smesh",
+    "name": "Standard Mesh",
+    "unit": "roll",
+    "ud": "roll",
+    "rates": [
+      {
+        "l": "48 in wide roll (600 ft²/roll)",
+        "a": 600,
+        "b": 600,
+        "n": "Edges lapped 2½ in — order 10% extra"
+      },
+      {
+        "l": "72 in wide roll (900 ft²/roll)",
+        "a": 900,
+        "b": 900,
+        "n": "Edges lapped 2½ in — order 10% extra"
+      }
+    ]
+  },
+  {
+    "id": "p15",
+    "name": "Panzer 15 Mesh",
+    "unit": "roll",
+    "ud": "roll — 48 in × 75 ft",
+    "rates": [
+      {
+        "l": null,
+        "a": 300,
+        "b": 300,
+        "n": "Edges abutted, not lapped"
+      }
+    ]
+  },
+  {
+    "id": "p20",
+    "name": "Panzer 20 Mesh",
+    "unit": "roll",
+    "ud": "roll — 48 in × 75 ft",
+    "rates": [
+      {
+        "l": null,
+        "a": 300,
+        "b": 300,
+        "n": "Edges abutted, not lapped"
+      }
+    ]
+  },
+  {
+    "id": "dmsr",
+    "name": "Detail Mesh Short Rolls",
+    "unit": "roll",
+    "ud": "roll — 9½ in × 150 ft",
+    "rates": [
+      {
+        "l": null,
+        "a": 119,
+        "b": 119
+      }
+    ]
+  },
+  {
+    "id": "cp",
+    "name": "Color Prime",
+    "unit": "pail",
+    "ud": "50 lb (23 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 1500,
+        "b": 1500
+      }
+    ]
+  },
+  {
+    "id": "cpw",
+    "name": "Color Prime-W",
+    "unit": "pail",
+    "ud": "pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 1000,
+        "b": 1500
+      }
+    ]
+  },
+  {
+    "id": "pws",
+    "name": "Primer with Sand",
+    "unit": "pail",
+    "ud": "60 lb (27 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 500,
+        "b": 700
+      }
+    ]
+  },
+  {
+    "id": "prymit",
+    "name": "Prymit",
+    "unit": "pail",
+    "ud": "40 lb (18.1 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 1000,
+        "b": 1500
+      }
+    ]
+  },
+  {
+    "id": "dpr",
+    "name": "DPR Finish",
+    "unit": "pail",
+    "ud": "70 lb (32 kg) pail",
+    "rates": [
+      {
+        "l": "Quarzputz",
+        "a": 140,
+        "b": 140
+      },
+      {
+        "l": "Sandblast",
+        "a": 150,
+        "b": 150
+      },
+      {
+        "l": "Freestyle",
+        "a": null,
+        "b": null
+      },
+      {
+        "l": "Sandpebble",
+        "a": 130,
+        "b": 130
+      },
+      {
+        "l": "Sandpebble Fine",
+        "a": 160,
+        "b": 160
+      },
+      {
+        "l": "Mojave",
+        "a": 125,
+        "b": 125
+      }
+    ]
+  },
+  {
+    "id": "mojave",
+    "name": "Mojave",
+    "unit": "pail",
+    "ud": "70 lb (32 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 125,
+        "b": 125,
+        "n": "Available from Oklahoma and California plants only"
+      }
+    ]
+  },
+  {
+    "id": "pmr",
+    "name": "PMR Finish",
+    "unit": "pail",
+    "ud": "70 lb pail",
+    "rates": [
+      {
+        "l": "Quarzputz PMR",
+        "a": 140,
+        "b": 140
+      },
+      {
+        "l": "Sandblast PMR",
+        "a": 150,
+        "b": 150
+      },
+      {
+        "l": "Freestyle PMR",
+        "a": null,
+        "b": null
+      },
+      {
+        "l": "Sandpebble PMR",
+        "a": 130,
+        "b": 130
+      },
+      {
+        "l": "Sandpebble Fine PMR",
+        "a": 160,
+        "b": 160
+      }
+    ]
+  },
+  {
+    "id": "hdpfin",
+    "name": "HDP Finish",
+    "unit": "pail",
+    "ud": "70 lb (32 kg) pail",
+    "rates": [
+      {
+        "l": "Quarzputz HDP",
+        "a": 140,
+        "b": 140
+      },
+      {
+        "l": "Sandblast HDP",
+        "a": 150,
+        "b": 150
+      },
+      {
+        "l": "Sandpebble HDP",
+        "a": 130,
+        "b": 130
+      },
+      {
+        "l": "Sandpebble Fine HDP",
+        "a": 160,
+        "b": 160
+      },
+      {
+        "l": "Lymestone HDP",
+        "a": 150,
+        "b": 150
+      }
+    ]
+  },
+  {
+    "id": "efin",
+    "name": "E Finish",
+    "unit": "pail",
+    "ud": "40 lb (18 kg) pail",
+    "rates": [
+      {
+        "l": "Sandpebble E",
+        "a": 130,
+        "b": 130
+      },
+      {
+        "l": "Sandpebble Fine E",
+        "a": 160,
+        "b": 160
+      }
+    ]
+  },
+  {
+    "id": "lymestone",
+    "name": "Lymestone",
+    "unit": "pail",
+    "ud": "70 lb (32 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 150,
+        "b": 150
+      }
+    ]
+  },
+  {
+    "id": "ferros",
+    "name": "Ferros",
+    "unit": "pail",
+    "ud": "5.3 qt (5 L) pail",
+    "rates": [
+      {
+        "l": "Troweled effect (1 coat)",
+        "a": 105,
+        "b": 155,
+        "coats": 1
+      },
+      {
+        "l": "Dripping effect (2 coats)",
+        "a": 75,
+        "b": 110,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "finesse",
+    "name": "Finesse",
+    "unit": "pail",
+    "ud": "60 lb (27.2 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 113,
+        "b": 113,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "wtexfin",
+    "name": "Weatherlastic Textured Finish",
+    "unit": "pail",
+    "ud": "pail",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "No technical data sheet on file for this product."
+      }
+    ]
+  },
+  {
+    "id": "woodgrain",
+    "name": "Woodgrain Finish",
+    "unit": "pail",
+    "ud": "pail",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "No technical data sheet on file for this product."
+      }
+    ]
+  },
+  {
+    "id": "stonemist",
+    "name": "Stone Mist",
+    "unit": "pail",
+    "ud": "55 lb (25 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 75,
+        "b": 75,
+        "coats": 2,
+        "n": "2-coat spray application"
+      }
+    ]
+  },
+  {
+    "id": "terraneo",
+    "name": "TerraNeo",
+    "unit": "pail",
+    "ud": "60 lb (27.2 kg) / 5 gal pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 95,
+        "b": 100
+      }
+    ]
+  },
+  {
+    "id": "tiburstone",
+    "name": "Tibur Stone",
+    "unit": "pail",
+    "ud": "pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 105,
+        "b": 105,
+        "n": "Substrate smoothness and porosity may affect the actual coverage rate. Pail size not confirmed (no data sheet on file — from product comparison page)."
+      }
+    ]
+  },
+  {
+    "id": "ameristone",
+    "name": "Ameristone",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 55,
+        "b": 65
+      }
+    ]
+  },
+  {
+    "id": "reflectit",
+    "name": "Reflectit",
+    "unit": "pail",
+    "ud": "42 lb (18 kg) pail",
+    "rates": [
+      {
+        "l": "Roller (2 coats)",
+        "a": 527,
+        "b": 527,
+        "coats": 2
+      },
+      {
+        "l": "Spray",
+        "a": 904,
+        "b": 904
+      }
+    ]
+  },
+  {
+    "id": "custombrick",
+    "name": "Custom Brick",
+    "unit": "pail",
+    "ud": "pail",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "No technical data sheet on file for this product."
+      }
+    ]
+  },
+  {
+    "id": "newbrick",
+    "name": "NewBrick",
+    "unit": "pail",
+    "ud": "pail",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "No technical data sheet on file for this product."
+      }
+    ]
+  },
+  {
+    "id": "tglaze",
+    "name": "Tuscan Glaze",
+    "unit": "pail",
+    "ud": "35 lb (16 kg) / 5-gal pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 900,
+        "b": 1100
+      }
+    ]
+  },
+  {
+    "id": "demadv",
+    "name": "Demandit Advantage",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 210,
+        "b": 480,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "demsm",
+    "name": "Demandit Smooth",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 210,
+        "b": 480,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "demsd",
+    "name": "Demandit Sanded",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 200,
+        "b": 290,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "hdpcoat",
+    "name": "HDP Coating",
+    "unit": "pail",
+    "ud": "55 lb (25 kg) pail",
+    "rates": [
+      {
+        "l": null,
+        "a": 200,
+        "b": 450,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "wlsmooth",
+    "name": "Weatherlastic Smooth",
+    "unit": "pail",
+    "ud": "5 gal (19 L) pail",
+    "rates": [
+      {
+        "l": "2 coats (min 11 mils DFT combined)",
+        "a": 325,
+        "b": 360,
+        "coats": 2
+      }
+    ]
+  },
+  {
+    "id": "sealclear",
+    "name": "SealClear",
+    "unit": "pail",
+    "ud": "40 lb (18 kg) pail",
+    "rates": [
+      {
+        "l": "New EIFS",
+        "a": 1200,
+        "b": 1600
+      },
+      {
+        "l": "Older / porous EIFS",
+        "a": 400,
+        "b": 1000
+      },
+      {
+        "l": "Primer before Demandit topcoat",
+        "a": 800,
+        "b": 1200
+      }
+    ]
+  },
+  {
+    "id": "gridtape",
+    "name": "Dryvit Grid Tape",
+    "unit": "roll",
+    "ud": "roll — 300 lin. ft",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "Used to tape joints before applying the air/water-resistive barrier. Default quantity = Joints Length ÷ 300 lin. ft — edit if needed."
+      }
+    ]
+  },
+  {
+    "id": "sysacc",
+    "name": "Dryvit Systems Accessories",
+    "unit": "item",
+    "ud": "per project take-off",
+    "rates": [
+      {
+        "l": null,
+        "a": null,
+        "b": null,
+        "n": "Bundle item covering Starter Strip, Track, and Vent Track. Quantities depend on project details — consult your representative."
+      }
+    ]
+  }
+]

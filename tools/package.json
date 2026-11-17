@@ -1,0 +1,9 @@
+{
+  "name": "material-estimator-fastapi-tools",
+  "private": true,
+  "description": "Build and test tools only (not deployed): builds the calculator screens and checks results against calculator_v8.html.",
+  "type": "module",
+  "devDependencies": {
+    "jsdom": "24.1.3"
+  }
+}
