@@ -55,8 +55,8 @@ Excel work; sign-in and saving need Supabase. API docs: http://127.0.0.1:8000/ap
    Environment variables (type **Config**): `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`. Deploy.
 4. First admin: in the SQL Editor, `update public.profiles set role = 'admin' where email = 'you@example.com';`
 
-`vercel.json` sends every request to the FastAPI app (`api/index.py`); files in `public/` are
-served directly by Vercel's CDN.
+Vercel detects the FastAPI app in `app/main.py` automatically (no `vercel.json` needed); files in
+`public/` are served directly by Vercel's CDN.
 
 ## Updating the calculator screens
 If `reference/calculator_v8.html` is replaced by a new verified version: run `node tools/build_ui.mjs`,
